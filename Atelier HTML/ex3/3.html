@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+  </head>
+  <body align="center">
+    <h1>Inscription en cycle ingenieur</h1>
+    <form>
+    <fieldset>
+      <legend>Informations personnelles</legend>
+      <label for="nom">Votre nom</label>
+      <input type="text" id="nom" placeholder="votre nom?" /><br /><br />
+      <label for="prenom">Votre prenom</label>
+      <input type="text" id="prenom" placeholder="votre prenom?" /><br /><br />
+      <label for="age">Votre age</label>
+      <input type="number" id="age" placeholder="votre age?" /><br /><br />
+      <label for="date">Votre date de naissance</label>
+      <input
+        type="date"
+        id="date"
+        placeholder="votre date de naissance?"
+      /><br /><br />
+      <label for="adresse">Votre adresse</label>
+      <textarea
+        id="adresse"
+        cols="30"
+        rows="7"
+        placeholder="votre adresse?"
+      ></textarea
+      ><br /><br />
+      <label for="mdp">Mot de passe</label>
+      <input type="password" id="mdp" required /><br /><br />
+      <label for="mdpverif">repeter votre mot de passe</label>
+      <input type="password" id="mdpverif" required /><br /><br />
+      <label for="email">Votre email : </label>
+      <input type="email" id="email" placeholder="Votre email ?" /><br /><br />
+      <label for="site">Votre site Web : </label>
+      <input
+        id="site"
+        type="url"
+        placeholder="URL de votre siteweb"
+      /><br /><br />
+    </fieldset>
+    <fieldset>
+      <legend>Cestion des groupes et des options</legend>
+      <label>Votre groupe?</label>
+      <input type="radio" name="groupe" id="1" />
+      <label for="1">groupe1</label>
+      <input type="radio" name="groupe" id="2" />
+      <label for="2">groupe2</label>
+      <input type="radio" name="groupe" id="3" />
+      <label for="3">groupe3</label><br><br>
+      <label for="ce">Numero de carte d'étudiant </label>
+      <input type="number" id="ce" placeholder="Numero decarte d'étudiant ?"><br><br>
+          <label>Choissiez les options que vous désirez :</label>
+          <select name="options" size="4">
+              <option>J2EE</option>
+              <option>Android</option>
+              <option>.Net</option>
+              <option>HTML5</option>
+              <option>Flex</option>
+          </select><br><br>
+          <input pattern="[I][N][S][A][T][0-9]{4}" name="antipirate" />
+  </fieldset>
+
+  <br>
+  <input type="submit" value="valider" />
+  <input type="reset" value="Initialiser" />
+</form>
+   
+  </body>
+</html>
